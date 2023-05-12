@@ -6,6 +6,7 @@ Este script de Python es una prueba de concepto (PoC) para explotar la vulnerabi
 
 - Python 3
 - Un sistema con Grafana que sea vulnerable a CVE-2021-43798
+- Docker (solo si deseas levantar el laboratorio de pruebas)
 
 ## Uso
 
@@ -15,34 +16,29 @@ Para ejecutar este script, primero debes clonar el repositorio y moverte al dire
 git clone https://github.com/FAOG99/GrafanaDirectoryScanner.git
 cd GrafanaDirectoryScanner
 ```
+##Levantar laboratorio de pruebas
+Si deseas levantar un laboratorio vulnerable puedes seguir los siguientes pasos:
+```bash
+cd CVE-2021-43798
+docker-compose up -d
+```
+Despues de que el servidor levante, puedes navegar a http://localhost:3000 para ingresar a la página de login. Para este exploit no se necesitan credenciales.
 
+##Ejecucion del exploit
 Luego puedes ejecutar el script utilizando Python 3.
 
 Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio,
-`-p` para especificar el puerto y `-f` para seleccionar el archivo que quieres buscar. Aquí tienes un ejemplo:
+`-p` para especificar el puerto y `-f` para ingresar la ruta del archivo que deseas buscar (si no usas esta opción correra /etc/passwd por defecto). Aquí dejo un ejemplo
 
 ```bash
-python3 GrafanaDirectoryScanner -d dominio.com -p 80 -f 1
+python3 GrafanaDirectoryScanner -d dominio.com -p 80 -f /etc/passwd
 ```
 
-Los archivos disponibles para buscar son los siguientes:
-
-1 - /etc/passwd
-
-2 - /etc/shadow
-
-3 - /etc/ssh/sshd_config
-
-4 - /var/log/auth.log
-
-5 - /var/www
-  
-
-Por ejemplo, si quieres buscar el archivo `/etc/passwd`, debes usar `-f 1`.
 
 Si el script encuentra el archivo y puede leerlo, imprimirá el contenido del archivo. Si no puede encontrar el archivo, imprimirá un mensaje de error.
 
 ## Ejemplo
-![Screenshot_20230511_223405](https://github.com/FAOG99/GrafanaDirectoryScanner/assets/92898049/8149651f-cc9d-47f0-bf2e-84675ba00c2c)
+![Screenshot_20230512_105018](https://github.com/FAOG99/GrafanaDirectoryScanner/assets/92898049/74b3588b-28ab-4c23-9cca-e2e2201db49f)
+
 
 
