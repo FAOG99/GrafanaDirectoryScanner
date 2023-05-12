@@ -12,8 +12,8 @@ Este script de Python es una prueba de concepto (PoC) para explotar la vulnerabi
 Para ejecutar este script, primero debes clonar el repositorio y moverte al directorio del proyecto:
 
 ```bash
-git clone <URL del repositorio>
-cd <directorio del proyecto>
+git clone https://github.com/FAOG99/GrafanaDirectoryScanner.git
+cd GrafanaDirectoryScanner
 ```
 
 Luego puedes ejecutar el script utilizando Python 3.
@@ -22,7 +22,7 @@ Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio
 `-p` para especificar el puerto y `-f` para seleccionar el archivo que quieres buscar. Aquí tienes un ejemplo:
 
 ```bash
-python3 script.py -d dominio.com -p 80 -f 1
+python3 GrafanaDirectoryScanner -d dominio.com -p 80 -f 1
 ```
 
 Los archivos disponibles para buscar son los siguientes:
