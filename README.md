@@ -42,3 +42,7 @@ Por ejemplo, si quieres buscar el archivo `/etc/passwd`, debes usar `-f 1`.
 
 Si el script encuentra el archivo y puede leerlo, imprimirá el contenido del archivo. Si no puede encontrar el archivo, imprimirá un mensaje de error.
 
+##Ejemplo
+![Screenshot_20230511_223405](https://github.com/FAOG99/GrafanaDirectoryScanner/assets/92898049/8149651f-cc9d-47f0-bf2e-84675ba00c2c)
+
+
