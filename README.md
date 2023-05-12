@@ -16,7 +16,9 @@ git clone <URL del repositorio>
 cd <directorio del proyecto>
 ```
 
-Luego puedes ejecutar el script utilizando Python 3. Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio,
+Luego puedes ejecutar el script utilizando Python 3.
+
+Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio,
 `-p` para especificar el puerto y `-f` para seleccionar el archivo que quieres buscar. Aquí tienes un ejemplo:
 
 ```bash
