@@ -1,5 +1,7 @@
 # PoC para CVE-2021-43798
 
+Grafana es una plataforma de código abierto para monitoreo y observabilidad. Las versiones de Grafana desde 8.0.0-beta1 hasta 8.3.0 (excepto las versiones parcheadas) son vulnerables a ldirectory traversal, permitiendo el acceso a archivos locales. La URL vulnerable es: <grafana_host_url>/public/plugins//, donde es el ID del plugin para cualquier plugin instalado. En ningún momento Grafana Cloud ha sido vulnerable. Se recomienda a los usuarios que actualicen a las versiones parcheadas 8.0.7, 8.1.8, 8.2.7 o 8.3.1. 
+
 Este script de Python es una prueba de concepto (PoC) para explotar la vulnerabilidad CVE-2021-43798 en Grafana.
 
 ## Pre-requisitos
