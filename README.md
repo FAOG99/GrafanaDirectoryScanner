@@ -16,7 +16,7 @@ Para ejecutar este script, primero debes clonar el repositorio y moverte al dire
 git clone https://github.com/FAOG99/GrafanaDirectoryScanner.git
 cd GrafanaDirectoryScanner
 ```
-##Levantar laboratorio de pruebas
+## Levantar laboratorio de pruebas
 Si deseas levantar un laboratorio vulnerable puedes seguir los siguientes pasos:
 ```bash
 cd CVE-2021-43798
@@ -24,8 +24,11 @@ docker-compose up -d
 ```
 Despues de que el servidor levante, puedes navegar a http://localhost:3000 para ingresar a la página de login. Para este exploit no se necesitan credenciales.
 
-##Ejecucion del exploit
+## Ejecucion del exploit
+
 Luego puedes ejecutar el script utilizando Python 3.
+
+Recuerda ejecutar el exploit desde la ruta correcta (si entraste a la carpeta del laboratorio recuerda regresar a la carpeta raiz)
 
 Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio,
 `-p` para especificar el puerto y `-f` para ingresar la ruta del archivo que deseas buscar (si no usas esta opción correra /etc/passwd por defecto). Aquí dejo un ejemplo
