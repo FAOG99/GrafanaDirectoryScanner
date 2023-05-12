@@ -16,7 +16,7 @@ git clone <URL del repositorio>
 cd <directorio del proyecto>
 ```
 
-Luego puedes ejecutar el script utilizando Python 3. Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio, `-p` para especificar el puerto y `-f` para seleccionar el archivo que quieres buscar. Aquí tienes un ejemplo:
+Luego puedes ejecutar el script utilizando Python 3. Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio,\n `-p` para especificar el puerto y `-f` para seleccionar el archivo que quieres buscar. Aquí tienes un ejemplo:
 
 ```bash
 python3 script.py -d dominio.com -p 80 -f 1
@@ -24,11 +24,11 @@ python3 script.py -d dominio.com -p 80 -f 1
 
 Los archivos disponibles para buscar son los siguientes:
 
-1 - /etc/passwd
-2 - /etc/shadow
-3 - /etc/ssh/sshd_config
-4 - /var/log/auth.log
-5 - /var/www
+1 - /etc/passwd\n
+2 - /etc/shadow\n
+3 - /etc/ssh/sshd_config\n
+4 - /var/log/auth.log\n
+5 - /var/www\n
   
 
 Por ejemplo, si quieres buscar el archivo `/etc/passwd`, debes usar `-f 1`.
