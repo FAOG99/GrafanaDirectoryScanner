@@ -30,10 +30,10 @@ Despues de que el servidor levante, puedes navegar a http://localhost:3000 para 
 
 Luego puedes ejecutar el script utilizando Python 3.
 
-Recuerda ejecutar el exploit desde la ruta correcta (si entraste a la carpeta del laboratorio recuerda regresar a la carpeta raiz)
+Recuerda ejecutar el exploit desde la ruta correcta (si entraste a la carpeta del laboratorio recuerda regresar a la carpeta raíz)
 
 Los argumentos necesarios son `-d` para especificar el dominio o la IP del sitio,
-`-p` para especificar el puerto y `-f` para ingresar la ruta del archivo que deseas buscar (si no usas esta opción correra /etc/passwd por defecto). Aquí dejo un ejemplo
+`-p` para especificar el puerto y `-f` para ingresar la ruta del archivo que deseas buscar (si no usas esta opción usará /etc/passwd por defecto). Aquí dejo un ejemplo
 
 ```bash
 python3 GrafanaDirectoryScanner -d dominio.com -p 80 -f /etc/passwd
