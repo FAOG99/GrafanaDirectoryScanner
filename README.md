@@ -24,7 +24,7 @@ docker-compose up -d
 ```
 Despues de que el servidor levante, puedes navegar a http://localhost:3000 para ingresar a la página de login. Para este exploit no se necesitan credenciales.
 
-## Ejecucion del exploit
+## Ejecución del exploit
 
 Luego puedes ejecutar el script utilizando Python 3.
 
